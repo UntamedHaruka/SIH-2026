@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="SafeForge — Interactive industrial safety training simulator for mining and manufacturing." />
+  <title>SafeForge | Industrial Safety Training</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="noise"></div>
+
+  <header class="navbar">
+    <a class="brand" href="#home">
+      <span class="brand-mark">SF</span>
+      <span>SAFE<span>FORGE</span></span>
+    </a>
+
+    <nav>
+      <a href="#about">About</a>
+      <a href="#modules">Modules</a>
+      <a href="#workflow">How it works</a>
+      <a href="#ar">AR Prototype</a>
+    </nav>
+
+    <button class="nav-btn" onclick="scrollToSection('simulator')">Try Demo <span>↗</span></button>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero section">
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span class="pulse"></span> SIH 2026 · INDUSTRIAL SAFETY</div>
+        <h1>Train for the<br><em>dangerous.</em></h1>
+        <p class="hero-text">
+          An interactive safety-training simulator for Jharkhand's
+          mining & manufacturing workforce — built with Unity and
+          extended with an AR learning layer.
+        </p>
+
+        <div class="hero-actions">
+          <button class="primary-btn" onclick="scrollToSection('simulator')">
+            Explore Simulator <span>→</span>
+          </button>
+          <button class="ghost-btn" onclick="scrollToSection('workflow')">
+            See how it works
+          </button>
+        </div>
+
+        <div class="hero-stats">
+          <div><strong>01</strong><span>Learn</span></div>
+          <div><strong>02</strong><span>Practice</span></div>
+          <div><strong>03</strong><span>Assess</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="visual-grid"></div>
+        <div class="scanner-line"></div>
+
+        <div class="hud hud-top">
+          <span>LIVE TRAINING ENVIRONMENT</span>
+          <span class="status">● ONLINE</span>
+        </div>
+
+        <div class="mine-card">
+          <div class="mine-label">MINE / ZONE 04</div>
+          <div class="mine-title">SAFETY<br>FIRST.</div>
+          <div class="mine-sub">SIMULATION READY</div>
+
+          <div class="hazard hazard-one">
+            <span>⚠</span>
+            <small>GAS</small>
+          </div>
+          <div class="hazard hazard-two">
+            <span>⚡</span>
+            <small>ELECTRICAL</small>
+          </div>
+
+          <div class="terrain">
+            <div class="mountain m1"></div>
+            <div class="mountain m2"></div>
+            <div class="road"></div>
+          </div>
+        </div>
+
+        <div class="hud hud-bottom">
+          <span>SCENARIO: GAS LEAK</span>
+          <span>01 / 05</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section about">
+      <div class="section-heading reveal">
+        <span class="section-number">01</span>
+        <div>
+          <div class="eyebrow">THE PROBLEM</div>
+          <h2>Safety training shouldn't<br><em>wait for an accident.</em></h2>
+        </div>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p class="large">
+            Traditional training often stops at manuals, lectures and
+            checklists. SafeForge turns safety procedures into
+            <strong>interactive experiences</strong> where trainees can
+            practice decisions without real-world risk.
+          </p>
+          <p>
+            The platform combines a Unity-based industrial environment,
+            scenario-driven assessments, performance analytics and a
+            lightweight AR prototype for real-world equipment guidance.
+          </p>
+        </div>
+
+        <div class="principles reveal">
+          <div class="principle">
+            <span>01</span>
+            <div><strong>Risk-free practice</strong><p>Experience dangerous situations safely.</p></div>
+          </div>
+          <div class="principle">
+            <span>02</span>
+            <div><strong>Decision-based learning</strong><p>Learn from choices and consequences.</p></div>
+          </div>
+          <div class="principle">
+            <span>03</span>
+            <div><strong>Measurable progress</strong><p>Track skills with scores and analytics.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MODULES -->
+    <section id="modules" class="section modules">
+      <div class="section-heading reveal">
+        <span class="section-number">02</span>
+        <div>
+          <div class="eyebrow">TRAINING MODULES</div>
+          <h2>Built around real<br><em>industrial scenarios.</em></h2>
+        </div>
+      </div>
+
+      <div class="module-grid">
+        <article class="module-card large-card reveal">
+          <div class="card-top"><span>MINING</span><span>01</span></div>
+          <div class="module-icon">⛏</div>
+          <h3>Mining Safety</h3>
+          <p>Navigate underground environments, detect hazards and respond to emergency situations.</p>
+          <div class="tags"><span>Gas leak</span><span>Electrical</span><span>Evacuation</span></div>
+        </article>
+
+        <article class="module-card reveal">
+          <div class="card-top"><span>MANUFACTURING</span><span>02</span></div>
+          <div class="module-icon">⚙</div>
+          <h3>Factory Floor</h3>
+          <p>Identify machinery, PPE and workplace safety risks.</p>
+          <div class="tags"><span>Machinery</span><span>PPE</span></div>
+        </article>
+
+        <article class="module-card reveal">
+          <div class="card-top"><span>EMERGENCY</span><span>03</span></div>
+          <div class="module-icon">✦</div>
+          <h3>Emergency Response</h3>
+          <p>Practice alarms, evacuation routes and incident response.</p>
+          <div class="tags"><span>Fire</span><span>Evacuation</span></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- WORKFLOW -->
+    <section id="workflow" class="section workflow">
+      <div class="section-heading reveal">
+        <span class="section-number">03</span>
+        <div>
+          <div class="eyebrow">TRAINING LOOP</div>
+          <h2>Learn. Make mistakes.<br><em>Learn better.</em></h2>
+        </div>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <span class="timeline-num">01</span>
+          <div><h3>Learn</h3><p>Understand the safety procedure before entering the scenario.</p></div>
+        </div>
+        <div class="timeline-line"></div>
+        <div class="timeline-item reveal">
+          <span class="timeline-num">02</span>
+          <div><h3>Simulate</h3><p>Enter a realistic Unity environment and interact with hazards.</p></div>
+        </div>
+        <div class="timeline-line"></div>
+        <div class="timeline-item reveal">
+          <span class="timeline-num">03</span>
+          <div><h3>Decide</h3><p>Choose what to do under pressure — without real-world consequences.</p></div>
+        </div>
+        <div class="timeline-line"></div>
+        <div class="timeline-item reveal">
+          <span class="timeline-num">04</span>
+          <div><h3>Assess</h3><p>Receive a safety score, feedback and recommended training.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SIMULATOR DEMO -->
+    <section id="simulator" class="section simulator-section">
+      <div class="section-heading reveal">
+        <span class="section-number">04</span>
+        <div>
+          <div class="eyebrow">INTERACTIVE DEMO</div>
+          <h2>What would <em>you</em> do?</h2>
+        </div>
+      </div>
+
+      <div class="simulator reveal">
+        <div class="sim-left">
+          <div class="sim-status"><span class="pulse"></span> SIMULATION ACTIVE</div>
+          <div class="scenario-number">SCENARIO 01 / 05</div>
+          <h3>Exposed Electrical Cable</h3>
+          <p>
+            You notice a damaged electrical cable near a wet section of the
+            mine. Other workers are nearby.
+          </p>
+
+          <div class="choice-list">
+            <button onclick="chooseAnswer(1, this)">A. Ignore it and continue working</button>
+            <button onclick="chooseAnswer(2, this)">B. Touch it to check if it's live</button>
+            <button onclick="chooseAnswer(3, this)">C. Keep distance, raise the alarm and report it</button>
+            <button onclick="chooseAnswer(4, this)">D. Ask another worker to investigate</button>
+          </div>
+
+          <div id="feedback" class="feedback"></div>
+        </div>
+
+        <div class="sim-right">
+          <div class="mini-map">
+            <div class="map-label">MINE / ZONE 04</div>
+            <div class="map-grid">
+              <span class="map-player">●</span>
+              <span class="map-hazard">⚠</span>
+            </div>
+            <div class="map-legend"><span>● YOU</span><span>⚠ HAZARD</span></div>
+          </div>
+          <div class="score-panel">
+            <div><span>SAFETY SCORE</span><strong id="score">100</strong></div>
+            <div class="score-bar"><span id="scoreBar"></span></div>
+            <small id="scoreMessage">Make the safest decision.</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AR -->
+    <section id="ar" class="section ar-section">
+      <div class="ar-copy reveal">
+        <div class="eyebrow">AR PROTOTYPE</div>
+        <h2>Bring safety<br><em>into the real world.</em></h2>
+        <p>
+          Point a phone at a safety object and access interactive
+          instructions, hazard information and 3D visualizations.
+        </p>
+
+        <div class="ar-features">
+          <div><span>01</span><strong>Equipment Guide</strong></div>
+          <div><span>02</span><strong>PPE Visualization</strong></div>
+          <div><span>03</span><strong>Hazard Overlay</strong></div>
+        </div>
+      </div>
+
+      <div class="phone reveal">
+        <div class="phone-notch"></div>
+        <div class="phone-screen">
+          <div class="ar-camera">AR CAMERA</div>
+          <div class="ar-object">🧯</div>
+          <div class="ar-target"></div>
+          <div class="ar-info">
+            <small>SAFETY EQUIPMENT</small>
+            <strong>FIRE EXTINGUISHER</strong>
+            <span>ABC · MULTI-PURPOSE</span>
+          </div>
+          <div class="ar-steps">
+            <span>1</span> Pull pin
+            <span>2</span> Aim at base
+            <span>3</span> Squeeze
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DASHBOARD -->
+    <section class="section dashboard-section">
+      <div class="section-heading reveal">
+        <span class="section-number">05</span>
+        <div>
+          <div class="eyebrow">PERFORMANCE ANALYTICS</div>
+          <h2>Turn training into<br><em>measurable progress.</em></h2>
+        </div>
+      </div>
+
+      <div class="dashboard reveal">
+        <div class="dashboard-head">
+          <div><span>TRAINEE PROFILE</span><strong>Operator / Demo</strong></div>
+          <div class="overall"><small>OVERALL</small><strong>85%</strong></div>
+        </div>
+
+        <div class="metric-grid">
+          <div class="metric"><span>Hazard Detection</span><strong>92%</strong><div class="metric-bar"><i style="width:92%"></i></div></div>
+          <div class="metric"><span>PPE Compliance</span><strong>90%</strong><div class="metric-bar"><i style="width:90%"></i></div></div>
+          <div class="metric"><span>Decision Making</span><strong>84%</strong><div class="metric-bar"><i style="width:84%"></i></div></div>
+          <div class="metric"><span>Emergency Response</span><strong>76%</strong><div class="metric-bar"><i style="width:76%"></i></div></div>
+        </div>
+
+        <div class="recommendation">
+          <span>RECOMMENDED NEXT MODULE</span>
+          <strong>Emergency Response Training →</strong>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section cta">
+      <div class="cta-box reveal">
+        <div class="eyebrow">SAFEFORGE · SIH 2026</div>
+        <h2>Practice danger.<br><em>Prevent it.</em></h2>
+        <p>Interactive industrial safety training — built for safer workplaces.</p>
+        <button class="primary-btn" onclick="scrollToSection('simulator')">Start Demo <span>→</span></button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="brand"><span class="brand-mark">SF</span><span>SAFE<span>FORGE</span></span></div>
+    <p>Interactive Industrial Safety Training Simulator</p>
+    <p>SIH 2026 · Jharkhand</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
